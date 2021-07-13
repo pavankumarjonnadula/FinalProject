@@ -23,6 +23,7 @@ function bookRoom(data) {
         email: firebase.auth().currentUser.email,
         uid: firebase.auth().currentUser.uid,
         roomID: list[index].doc.id,
+        
         quantity: list[index].quantity,
         fromDate: new Date(list[index].fromDate),
         toDate: new Date(list[index].toDate),
